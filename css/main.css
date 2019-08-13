@@ -1,0 +1,24 @@
+#background-banner {
+    background-color: #1db5cb;
+    height: 100vh;
+}
+
+    #background-banner img {
+        height: 100vh;
+    }
+
+.div-block {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.text-block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.text-block > h1{
+    color:white;
+    font-size:80pt;
+}
