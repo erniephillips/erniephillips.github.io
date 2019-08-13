@@ -13,22 +13,22 @@ $(function () {
 
     //handle social media icons hover
     $("#facebook_icon").hover(function () {
-        this.src = "./images/facebook_black.png";
+        this.src = "./images/facebook_lightblue.png";
     }, function () {
         this.src = "./images/facebook_blue.png";
     });
     $("#github_icon").hover(function () {
-        this.src = "./images/github_black.png";
+        this.src = "./images/github_lightblue.png";
     }, function () {
         this.src = "./images/github_blue.png";
     });
     $("#linkedin_icon").hover(function () {
-        this.src = "./images/linkedin_black.png";
+        this.src = "./images/linkedin_lightblue.png";
     }, function () {
         this.src = "./images/linkedin_blue.png";
     });
     $("#android_icon").hover(function () {
-        this.src = "./images/android_black.png";
+        this.src = "./images/android_lightblue.png";
     }, function () {
         this.src = "./images/android_blue.png";
     });
