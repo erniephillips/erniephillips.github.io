@@ -17,6 +17,8 @@ h2{
 
 .section-3 {
     background-color: #1db5cb;
+}
+.section-3 h2{
     color: white;
 }
 
@@ -28,6 +30,15 @@ h2{
 .section-6 {
     background-color: #1db5cb;
     color: white;
+}
+
+/*override bootstrap*/
+.card > .card-header {
+    background-color:#004080;
+}
+.card > .card-header > h5 > button{
+     color:white;
+     text-decoration:none;
 }
 
 /*Media Queries*/
