@@ -26,3 +26,13 @@
         font-size: 80pt;
         font-family: 'Bevan', cursive;
     }
+
+.section-3 {
+    background-color: #1db5cb;
+    color:white;
+}
+
+.section-5 {
+    background-color: #9dd1de;
+    color:black;
+}
