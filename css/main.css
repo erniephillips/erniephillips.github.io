@@ -10,18 +10,15 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Bevan&display=swap");
 
-/*reset*/
-h2 {
-    font-size: 50pt;
-    font-family: 'Bevan';
-}
 
 .header-blue {
     color: #195C9D;
 }
-.font-size-12{
-    font-size:12pt;
+
+.font-size-12 {
+    font-size: 12pt;
 }
+
 #background-banner {
     background-color: #1db5cb;
     height: 100vh;
@@ -142,7 +139,6 @@ h2 {
 
     .nav-tabs--left .nav-link {
         transition: border-color .125s ease-in;
-        
     }
 
         .nav-tabs--left .nav-link:hover {
@@ -163,9 +159,9 @@ h2 {
                 border-color: #0275d8 #fff #0275d8 #0275d8;
             }
 
-            .tab-pane{
-                padding-right:30px !important;
-            }
+.tab-pane {
+    padding-right: 30px !important;
+}
 
 /*End bootstrap override*/
 
@@ -180,13 +176,19 @@ h2 {
 
         .align-middle h1 {
             color: white;
-            font-size: 40pt;
+            font-size: 50pt;
             text-align: center;
             font-family: 'Bevan';
         }
-        p, .nav-tabs, .tab-content{
-            font-size:12pt;
-        }
+
+    h2 {
+        font-size: 35pt;
+        font-family: 'Bevan';
+    }
+
+    p, .nav-tabs, .tab-content {
+        font-size: 12pt;
+    }
 }
 
 @media (min-width: 576px) {
@@ -203,9 +205,15 @@ h2 {
             text-align: center;
             font-family: 'Bevan';
         }
-        p, .nav-tabs, .tab-content{
-            font-size:14pt;
-        }
+
+    h2 {
+        font-size: 35pt;
+        font-family: 'Bevan';
+    }
+
+    p, .nav-tabs, .tab-content {
+        font-size: 14pt;
+    }
 }
 
 @media (min-width: 768px) {
@@ -222,9 +230,16 @@ h2 {
             text-align: center;
             font-family: 'Bevan';
         }
-        p, .nav-tabs, .tab-content{
-            font-size:16pt;
-        }
+
+    h2 {
+        font-size: 40pt;
+        font-family: 'Bevan';
+    }
+
+
+    p, .nav-tabs, .tab-content {
+        font-size: 16pt;
+    }
 }
 
 @media (min-width: 992px) {
@@ -241,9 +256,16 @@ h2 {
             text-align: center;
             font-family: 'Bevan';
         }
-        p, .nav-tabs, .tab-content{
-            font-size:18pt;
-        }
+
+    h2 {
+        font-size: 40pt;
+        font-family: 'Bevan';
+    }
+
+
+    p, .nav-tabs, .tab-content {
+        font-size: 18pt;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -260,7 +282,13 @@ h2 {
             text-align: center;
             font-family: 'Bevan';
         }
-        p, .nav-tabs, .tab-content{
-            font-size:20pt;
-        }
+
+    h2 {
+        font-size: 50pt;
+        font-family: 'Bevan';
+    }
+
+    p, .nav-tabs, .tab-content {
+        font-size: 20pt;
+    }
 }
