@@ -8,5 +8,28 @@
 ;===========================================================================================================================================
 */
 $(function () {
+    //handle click for side tabs init load
     $("#link_1").click();
+
+    //handle social media icons hover
+    $("#facebook_icon").hover(function () {
+        this.src = "./images/facebook_black.png";
+    }, function () {
+        this.src = "./images/facebook_blue.png";
+    });
+    $("#github_icon").hover(function () {
+        this.src = "./images/github_black.png";
+    }, function () {
+        this.src = "./images/github_blue.png";
+    });
+    $("#linkedin_icon").hover(function () {
+        this.src = "./images/linkedin_black.png";
+    }, function () {
+        this.src = "./images/linkedin_blue.png";
+    });
+    $("#android_icon").hover(function () {
+        this.src = "./images/android_black.png";
+    }, function () {
+        this.src = "./images/android_blue.png";
+    });
 });
