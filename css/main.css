@@ -1,9 +1,23 @@
+/*
+;===========================================================================================================================================
+; Title:  main.css
+; Author: Ernie Phillips
+; Date:   13 Aug 2019
+; Modified By: Ernie Phillips
+; Description: basic css file for maintaining application
+;===========================================================================================================================================
+*/
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Bevan&display=swap");
 
 /*reset*/
-h2{
-    font-size:50pt;
-    font-family: 'Bevan', cursive;
+h2 {
+    font-size: 50pt;
+    font-family: 'Bevan';
+}
+
+.header-blue {
+    color: #195C9D;
 }
 
 #background-banner {
@@ -20,9 +34,10 @@ h2{
 .section-3 {
     background-color: #1db5cb;
 }
-.section-3 h2{
-    color: white;
-}
+
+    .section-3 h2 {
+        color: white;
+    }
 
 .section-4 {
     background-color: #9dd1de;
@@ -35,6 +50,7 @@ h2{
 }
 
 /*override bootstrap*/
+/*Accordion override*/
 .card {
     -moz-box-direction: normal;
     -moz-box-orient: vertical;
@@ -43,58 +59,110 @@ h2{
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom:1px;
-    border:none;
+    margin-bottom: 1px;
+    border: none;
 }
+
 .card-header:first-child {
     border-radius: 0;
 }
+
 .card-header {
     background-color: #f7f7f9;
     margin-bottom: 0;
     padding: 20px 1.25rem;
-    border:none;
-    
-}
-.card-header a i{
-    float:left;
-    font-size:25px;
-    padding:5px 0;
-    margin:0 25px 0 0px;
-    color:#195C9D;
-}
-.card-header i{
-    float:right;        
-    font-size:30px;
-    width:1%;
-    margin-top:8px;
-    margin-right:10px;
-}
-.card-header a{
-    width:97%;
-    float:left;
-    color:#004080;
-}
-.card-header p{
-    margin:0;
+    border: none;
 }
 
-.card-header h3{
-    margin:0 0 0px;
-    font-size:20px;
-    font-family: 'Slabo 27px', serif;
-    font-weight:bold;
-    color:#004080;
-}
+    .card-header a i {
+        float: left;
+        font-size: 25px;
+        padding: 5px 0;
+        margin: 0 25px 0 0px;
+        color: #195C9D;
+    }
+
+    .card-header i {
+        float: right;
+        font-size: 30px;
+        width: 1%;
+        margin-top: 8px;
+        margin-right: 10px;
+    }
+
+    .card-header a {
+        width: 97%;
+        float: left;
+        color: #004080;
+    }
+
+    .card-header p {
+        margin: 0;
+    }
+
+    .card-header h3 {
+        margin: 0 0 0px;
+        font-size: 20px;
+        font-family: 'Slabo 27px', serif;
+        font-weight: bold;
+        color: #004080;
+    }
+
 .card-block {
     -moz-box-flex: 1;
     flex: 1 1 auto;
     padding: 20px;
-    color:#232323;
-    box-shadow:inset 0px 4px 5px rgba(0,0,0,0.1);
-    border-top:1px soild #000;
-    border-radius:0;
+    color: #232323;
+    box-shadow: inset 0px 4px 5px rgba(0,0,0,0.1);
+    border-top: 1px soild #000;
+    border-radius: 0;
 }
+
+/*Pill-Tab*/
+.pill-link {
+    color: black !important;
+}
+
+.nav-tabs--vertical {
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-tabs--left {
+    margin: 0;
+}
+
+    .nav-tabs--left .nav-item + .nav-item {
+        margin-top: .25rem;
+    }
+
+    .nav-tabs--left .nav-link {
+        transition: border-color .125s ease-in;
+        white-space: nowrap;
+    }
+
+        .nav-tabs--left .nav-link:hover {
+            background-color: #f7f7f7;
+            border-color: transparent;
+        }
+
+        .nav-tabs--left .nav-link.active {
+            border-bottom-color: #ddd;
+            border-right-color: #fff;
+            border-bottom-left-radius: 0.25rem;
+            border-top-right-radius: 0;
+            margin-right: -1px;
+        }
+
+            .nav-tabs--left .nav-link.active:hover {
+                background-color: #fff;
+                border-color: #0275d8 #fff #0275d8 #0275d8;
+            }
+
+
+/*End bootstrap override*/
 
 /*Media Queries*/
 @media (max-width: 575px) {
@@ -104,11 +172,13 @@ h2{
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .align-middle h1 {
+
+        .align-middle h1 {
             color: white;
             font-size: 40pt;
             text-align: center;
-            font-family: 'Bevan', cursive;
+            font-weight:bolder;
+            font-family: 'Bevan';
         }
 }
 
@@ -119,11 +189,13 @@ h2{
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
         .align-middle h1 {
             color: white;
             font-size: 50pt;
             text-align: center;
-            font-family: 'Bevan', cursive;
+            font-weight:bolder;
+            font-family: 'Bevan';
         }
 }
 
@@ -134,11 +206,13 @@ h2{
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .align-middle h1 {
+
+        .align-middle h1 {
             color: white;
             font-size: 60pt;
             text-align: center;
-            font-family: 'Bevan', cursive;
+            font-weight:bolder;
+            font-family: 'Bevan';
         }
 }
 
@@ -149,11 +223,13 @@ h2{
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .align-middle h1 {
+
+        .align-middle h1 {
             color: white;
             font-size: 70pt;
             text-align: center;
-            font-family: 'Bevan', cursive;
+            font-weight:bolder;
+            font-family: 'Bevan';
         }
 }
 
@@ -164,10 +240,12 @@ h2{
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    .align-middle h1 {
+
+        .align-middle h1 {
             color: white;
             font-size: 80pt;
             text-align: center;
-            font-family: 'Bevan', cursive;
+            font-weight:bolder;
+            font-family: 'Bevan';
         }
 }

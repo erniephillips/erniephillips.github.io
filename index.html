@@ -7,11 +7,11 @@
     <meta name="author" content="Ernie Phillips">
     <meta http-equiv="x-ua-compatible" content="IE=EDGE, IE=11, IE=10">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Bevan&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
     <div id="background-banner">
@@ -21,7 +21,7 @@
     <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12">
-                <h2>About Me</h2>
+                <h2 class="header-blue">About Me</h2>
                 <p>My name is Ernie Phillips. I am a .NET / SharePoint Web Application developer.  I currently live in Hopatcong, New Jersey.</p>
                 <p>To simply put it, I enjoy my work.  I love building a website and experiencing that feeling of accomplishment afterward.  In most cases I enjoy backend programming but also dabble in front-end as well.</p>
                 <p>In my spare time, I enjoy spending time with my family and working on small house projects. For anyone thats ever owned a house, you know those projects are never over, so I find plenty to stay busy.</p>
@@ -143,13 +143,122 @@
     <div class="container pt-5 pb-5">
         <div class="row">
             <div class="col-12">
-                <h2>Skills</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <h2 class="header-blue">Skills</h2>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex flex-row mt-2">
+                            <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
+                                <li class="nav-item">
+                                    <a href="#category_1" id="link_1" class="nav-link pill-link" data-toggle="tab" role="tab" aria-controls="category_1">
+                                        Client-Side
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#category_2" id="link_2" class="nav-link pill-link" data-toggle="tab" role="tab" aria-controls="category_2">
+                                        Server-Side
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#category_3" id="link_3" class="nav-link pill-link" data-toggle="tab" role="tab" aria-controls="category_3">
+                                        Web Services
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#category_4" id="link_4" class="nav-link pill-link" data-toggle="tab" role="tab" aria-controls="category_4">
+                                        Database
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#category_5" id="link_5" class="nav-link pill-link" data-toggle="tab" role="tab" aria-controls="category_5">
+                                        Development Tools
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#category_6" id="link_6" class="nav-link pill-link" data-toggle="tab" role="tab" aria-controls="category_6">
+                                        CRM/CMS
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content col-8">
+                                <div class="tab-pane active" id="category_1" role="tabpanel">
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>jQuery</li>
+                                        <li>Twitter Bootstrap 3 & 4</li>
+                                        <li>AJAX</li>
+                                        <li>XML</li>
+                                        <li>JSON</li>
+                                        <li>AngularJS</li>
+                                        <li>PUG</li>
+                                        <li>EJS</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="category_2" role="tabpanel">
+                                    <ul>
+                                        <li>Java</li>
+                                        <li>C#</li>
+                                        <li>VB.NET</li>
+                                        <li>ASP.NET Web Forms/MVC</li>
+                                        <li>Classic ASP</li>
+                                        <li>ADO.NET</li>
+                                        <li>Oracle JSF Trinidad Framework</li>
+                                        <li>LINQ</li>
+                                        <li>NodeJS</li>
+                                        <li>ExpressJS</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="category_3" role="tabpanel">
+                                    <ul>
+                                        <li>WCF</li>
+                                        <li>REST</li>
+                                        <li>SOAP</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="category_4" role="tabpanel">
+                                    <ul>
+                                        <li>T-SQL</li>
+                                        <li>PL-SQL</li>
+                                        <li>MySql</li>
+                                        <li>MongoDB</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="category_5" role="tabpanel">
+                                    <ul>
+                                        <li>Sql Developer</li>
+                                        <li>Sql Server 2008, 2012, 2016</li>
+                                        <li>Visual Studio 2008 - 2019</li>
+                                        <li>Visual Studio Code</li>
+                                        <li>NetBeans</li>
+                                        <li>Dream Weaver</li>
+                                        <li>Eclipse</li>
+                                        <li>Team Foundation Server</li>
+                                        <li>Fiddler 2/4</li>
+                                        <li>GIT</li>
+                                        <li>NPM</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="category_6" role="tabpanel">
+                                    <ul>
+                                        <li>Telerik Sitefinity 3.7, 7.3</li>
+                                        <li>WordPress</li>
+                                        <li>SharePoint 2010, 2013</li>
+                                        <li>DotNetNuke</li>
+                                        <li>iMist</li>
+                                        <li>Aptify 5.5.3</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        I am an cccomplished web developer with strong communication skills, software development, time management, team collaboration and organization skills. I have a proven track record in delivering impactful websites both as a developer and a technical lead while having the ability to evaluate and evolve with cutting edge web development technologies. I am often praised for exceptional problem-solving skills and sense of urgency with meeting project deadlines and customer satisfaction.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <div class="container-fluid section-6">
         <div class="container pt-5 pb-5">
             <div class="row">
