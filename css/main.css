@@ -9,34 +9,98 @@
         height: 100vh;
     }
 
-.div-block {
-    display: table;
-    width: 100%;
-    height: 100%;
-}
 
-.text-block {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-}
 
-    .text-block > h1 {
-        color: white;
-        font-size: 80pt;
-        font-family: 'Bevan', cursive;
-    }
+
+
 
 .section-3 {
     background-color: #1db5cb;
-    color:white;
+    color: white;
 }
 
 .section-4 {
     background-color: #9dd1de;
-    color:black;
+    color: black;
 }
-.section-6{
+
+.section-6 {
     background-color: #1db5cb;
-    color:white;
+    color: white;
+}
+
+/*Media Queries*/
+@media (max-width: 575px) {
+    .align-middle {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .align-middle h1 {
+            color: white;
+            font-size: 40pt;
+            text-align: center;
+            font-family: 'Bevan', cursive;
+        }
+}
+
+@media (min-width: 576px) {
+    .align-middle {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+        .align-middle h1 {
+            color: white;
+            font-size: 50pt;
+            text-align: center;
+            font-family: 'Bevan', cursive;
+        }
+}
+
+@media (min-width: 768px) {
+    .align-middle {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .align-middle h1 {
+            color: white;
+            font-size: 60pt;
+            text-align: center;
+            font-family: 'Bevan', cursive;
+        }
+}
+
+@media (min-width: 992px) {
+    .align-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .align-middle h1 {
+            color: white;
+            font-size: 70pt;
+            text-align: center;
+            font-family: 'Bevan', cursive;
+        }
+}
+
+@media (min-width: 1200px) {
+    .align-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .align-middle h1 {
+            color: white;
+            font-size: 80pt;
+            text-align: center;
+            font-family: 'Bevan', cursive;
+        }
 }
