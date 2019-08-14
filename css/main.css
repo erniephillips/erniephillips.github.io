@@ -85,7 +85,7 @@
     border: none;
 }
 
-    .card-header a i {
+    .card-header a i:first-child {
         float: left;
         font-size: 25px;
         padding: 5px 0;
@@ -94,11 +94,11 @@
         color: #195C9D;
     }
 
-    .card-header i {
+    .card-header a i {
         float: right;
         font-size: 30px;
         width: 1%;
-        margin-top: 8px;
+        margin-top: -25px;
         margin-right: 10px;
     }
 
@@ -114,6 +114,7 @@
 
     .card-header h3 {
         margin: 0 0 0px;
+        margin-top:5px;
         font-size: 20px;
         font-family: 'Slabo 27px', serif;
         font-weight: bold;
