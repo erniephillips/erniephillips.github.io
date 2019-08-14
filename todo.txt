@@ -1,0 +1,3 @@
+﻿- Add favicon
+- Change All Things Android Repo Image to link to Android app instead
+- host on http://erniephillipsportfolio.com
