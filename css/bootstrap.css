@@ -2454,23 +2454,23 @@ fieldset:disabled a.btn {
 }
 
 .btn-secondary {
-  color: #fff;
-  background-color: #195C9D;
-  border:3px solid #195C9D;
+  color: #195C9D;
+  background-color: #fff;
+  border:3px solid #fff;
   font-weight:bold;
 }
 
 .btn-secondary:hover {
-  color: #195C9D;
+  color: #fff;
   border:3px solid #195C9D;
   font-weight:bold;
-  background-color:transparent;
+  background-color:#195C9D;
 }
 
 .btn-secondary:focus, .btn-secondary.focus {
-  color: #fff;
-  background-color: #195C9D;
-  border:3px solid #195C9D;
+  color: #195C9D;
+  background-color: #fff;
+  border:3px solid #fff;
   font-weight:bold;
 }
 
