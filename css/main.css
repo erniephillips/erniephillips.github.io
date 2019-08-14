@@ -327,13 +327,11 @@ body{
 /*---make a basic box ---*/
 .letter {
     position: relative;
-    float: left;
+    display: inline-block;
     color: white;
     font-family: 'Bevan';
 }
-.clear{
-    clear:both;
-}
+
 /*end fadein*/
 
 /*Media Queries*/
@@ -369,7 +367,7 @@ body{
 @media (min-width: 576px) {
     .align-middle {
         position: absolute;
-        top: 80%;
+        top: 75%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
