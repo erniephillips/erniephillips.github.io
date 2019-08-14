@@ -56,8 +56,8 @@
     font-size: 13pt;
 }
 
-#socialMediaIcons img{
-    min-width:35px;
+#socialMediaIcons img {
+    min-width: 35px;
 }
 
 /*override bootstrap*/
@@ -178,6 +178,99 @@
 
 /*End bootstrap override*/
 
+/*Fade in letters*/
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+    .fade-in.one {
+        -webkit-animation-delay: 0.1s;
+        -moz-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .fade-in.two {
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .fade-in.three {
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+
+    .fade-in.four {
+        -webkit-animation-delay: 0.7s;
+        -moz-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+    }
+
+    .fade-in.five {
+        -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+    }
+
+    .fade-in.six {
+        -webkit-animation-delay: 1.1s;
+        -moz-animation-delay: 1.1s;
+        animation-delay: 1.1s;
+    }
+
+/*---make a basic box ---*/
+.letter {
+    position: relative;
+    float: left;
+    color: white;
+    font-family: 'Bevan';
+}
+.clear{
+    clear:both;
+}
+/*end fadein*/
+
 /*Media Queries*/
 @media (max-width: 575px) {
     .align-middle {
@@ -190,9 +283,13 @@
         .align-middle h1 {
             color: white;
             font-size: 50pt;
-            text-align: center;
+            text-align: left;
             font-family: 'Bevan';
         }
+
+    .letter {
+        font-size: 30pt;
+    }
 
     h2 {
         font-size: 35pt;
@@ -215,9 +312,13 @@
         .align-middle h1 {
             color: white;
             font-size: 50pt;
-            text-align: center;
+            text-align: left;
             font-family: 'Bevan';
         }
+
+    .letter {
+        font-size: 30pt;
+    }
 
     h2 {
         font-size: 35pt;
@@ -240,9 +341,13 @@
         .align-middle h1 {
             color: white;
             font-size: 60pt;
-            text-align: center;
+            text-align: left;
             font-family: 'Bevan';
         }
+
+    .letter {
+        font-size: 40pt;
+    }
 
     h2 {
         font-size: 40pt;
@@ -266,12 +371,16 @@
         .align-middle h1 {
             color: white;
             font-size: 70pt;
-            text-align: center;
+            text-align: left;
             font-family: 'Bevan';
         }
 
+    .letter {
+        font-size: 50pt;
+    }
+
     h2 {
-        font-size: 40pt;
+        font-size: 50pt;
         font-family: 'Bevan';
     }
 
@@ -292,9 +401,13 @@
         .align-middle h1 {
             color: white;
             font-size: 80pt;
-            text-align: center;
+            text-align: left;
             font-family: 'Bevan';
         }
+
+    .letter {
+        font-size: 60pt;
+    }
 
     h2 {
         font-size: 50pt;
