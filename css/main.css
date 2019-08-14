@@ -289,7 +289,7 @@
 @media (max-width: 575px) {
     .align-middle {
         position: absolute;
-        top: 80%;
+        top: 70%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -302,7 +302,7 @@
         }
 
     .letter {
-        font-size: 25pt;
+        font-size: 23pt;
     }
 
     h2 {
