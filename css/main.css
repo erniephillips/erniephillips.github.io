@@ -19,9 +19,6 @@
     font-size: 12pt;
 }
 
-body{
-    scroll-behavior: smooth;
-}
 
 #background-banner {
     background-color: #1db5cb;
@@ -31,7 +28,11 @@ body{
 }
 
     #background-banner img {
-        height: 100vh;
+        max-height: 100vh;
+        max-width:100%;
+        position:absolute;
+        bottom:0;
+        left:0;
     }
 
 .section-3 {
@@ -338,7 +339,7 @@ body{
 @media (max-width: 575px) {
     .align-middle {
         position: absolute;
-        top: 80%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
