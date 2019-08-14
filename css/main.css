@@ -48,11 +48,16 @@
     color: white;
 }
 
-.card-block h4{
-    font-size:15pt;
+.card-block h4 {
+    font-size: 15pt;
 }
-.card-block p{
-    font-size:13pt;
+
+.card-block p {
+    font-size: 13pt;
+}
+
+#socialMediaIcons img{
+    min-width:35px;
 }
 
 /*override bootstrap*/
@@ -84,7 +89,7 @@
         float: left;
         font-size: 25px;
         padding: 5px 0;
-        padding-right:15px;
+        padding-right: 15px;
         margin: 0 25px 0 0px;
         color: #195C9D;
     }
