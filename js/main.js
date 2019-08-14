@@ -14,6 +14,15 @@ $(function () {
     //handle click for side tabs init load
     $("#link_1").click();
 
+    //handle scroll
+    $('#btnAboutMe').on('click', function (e) {
+        e.preventDefault(); //prevent event propagation
+        var target = $("#aboutMe");//grab intended target
+        $('html, body').stop().animate({//jQuery animation
+            scrollTop: target.offset().top //grab screen position then set with a 2 second delay
+        }, 2000);
+    });
+
     //handle social media icons hover
     $("#facebook_icon").hover(function () {
         this.src = "./images/facebook_lightblue.png";

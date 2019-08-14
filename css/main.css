@@ -19,6 +19,10 @@
     font-size: 12pt;
 }
 
+body{
+    scroll-behavior: smooth;
+}
+
 #background-banner {
     background-color: #1db5cb;
     height: 100vh;
