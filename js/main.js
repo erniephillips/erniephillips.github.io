@@ -8,6 +8,9 @@
 ;===========================================================================================================================================
 */
 $(function () {
+    //handle all DOM elements in Animate on Selection JS class 
+    AOS.init();
+
     //handle click for side tabs init load
     $("#link_1").click();
 
