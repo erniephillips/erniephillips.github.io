@@ -258,6 +258,16 @@
         -moz-animation-delay: 1.1s;
         animation-delay: 1.1s;
     }
+    .fade-in.seven {
+        -webkit-animation-delay: 1.3s;
+        -moz-animation-delay: 1.3s;
+        animation-delay: 1.3s;
+    }
+    .fade-in.eight {
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    }
 
 /*---make a basic box ---*/
 .letter {
