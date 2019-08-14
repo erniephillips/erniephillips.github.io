@@ -374,7 +374,7 @@
 @media (min-width: 576px) {
     .align-middle {
         position: absolute;
-        top: 75%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -412,7 +412,7 @@
 @media (min-width: 768px) {
     .align-middle {
         position: absolute;
-        top: 70%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
