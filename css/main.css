@@ -23,6 +23,7 @@
 #background-banner {
     background-color: #1db5cb;
     height: 100vh;
+    overflow: auto;
     background-image: url("../images/pattern.jpg");
     background-repeat: repeat-y repeat-x;
 }
