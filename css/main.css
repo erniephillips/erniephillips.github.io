@@ -340,14 +340,14 @@ body{
 @media (max-width: 575px) {
     .align-middle {
         position: absolute;
-        top: 70%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
         .align-middle h1 {
             color: white;
-            font-size: 50pt;
+            font-size: 23pt;
             text-align: left;
             font-family: 'Bevan';
         }
@@ -376,7 +376,7 @@ body{
 
         .align-middle h1 {
             color: white;
-            font-size: 50pt;
+            font-size: 30pt;
             text-align: left;
             font-family: 'Bevan';
         }
@@ -405,7 +405,7 @@ body{
 
         .align-middle h1 {
             color: white;
-            font-size: 60pt;
+            font-size: 40pt;
             text-align: left;
             font-family: 'Bevan';
         }
@@ -435,7 +435,7 @@ body{
 
         .align-middle h1 {
             color: white;
-            font-size: 70pt;
+            font-size: 50pt;
             text-align: left;
             font-family: 'Bevan';
         }
@@ -465,7 +465,7 @@ body{
 
         .align-middle h1 {
             color: white;
-            font-size: 80pt;
+            font-size: 60pt;
             text-align: left;
             font-family: 'Bevan';
         }
