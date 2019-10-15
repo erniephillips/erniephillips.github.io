@@ -44,4 +44,13 @@ $(function () {
     }, function () {
         this.src = "./images/android_blue.png";
     });
+
+    $(".modal-click").click(function () {
+        var url = this.src;
+        var filename = url.substring(url.lastIndexOf('/') + 1);
+
+        $(".modal-title").text(filename)
+        $("#imgMain").attr('src', url);
+    });
 });
+

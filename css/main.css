@@ -36,7 +36,11 @@
     background-repeat: repeat-y repeat-x;
     left: 0;
     right: 0;
-    top: 0;
+    top: 55px;
+}
+
+.navbar{
+    z-index: 2;
 }
 
 .section-2 {
