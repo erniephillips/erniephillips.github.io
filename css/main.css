@@ -385,7 +385,7 @@
     }
 
     #background-banner #myPic {
-        content: url("../images/me_in_color_bluescale_long.png");
+        content: url("../images/me_in_color_bluescale_long_new.png");
         position: fixed;
         z-index: 0;
         height: 100vh;
@@ -424,7 +424,7 @@
     }
 
     #background-banner #myPic {
-        content: url("../images/me_in_color_bluescale_long.png");
+        content: url("../images/me_in_color_bluescale_long_new.png");
         height: 100vh;
         z-index: 0;
         max-width: 100%;
@@ -464,7 +464,7 @@
     }
 
     #background-banner #myPic {
-        content: url("../images/me_in_color_bluescale_long.png");
+        content: url("../images/me_in_color_bluescale_long_new.png");
         height: 100%;
         z-index: 0;
         max-width: 100%;
@@ -504,7 +504,7 @@
     }
 
     #background-banner #myPic {
-        content: url("../images/me_in_color_bluescale.png");
+        content: url("../images/me_in_color_bluescale_new.png");
         height: 100vh;
         z-index: 0;
         max-width: 100%;
@@ -544,7 +544,7 @@
     }
 
     #background-banner #myPic {
-        content: url("../images/me_in_color_bluescale.png");
+        content: url("../images/me_in_color_bluescale_new.png");
         height: 100vh;
         z-index: 0;
         max-width: 100%;
