@@ -1,0 +1,555 @@
+/*
+;===========================================================================================================================================
+; Title:  main.css
+; Author: Ernie Phillips
+; Date:   13 Aug 2019
+; Modified By: Ernie Phillips
+; Description: basic css file for maintaining application
+;===========================================================================================================================================
+*/
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Bevan&display=swap");
+
+
+.header-blue {
+    color: #195C9D;
+}
+
+.font-size-12 {
+    font-size: 12pt;
+}
+
+.slide-over-header {
+    z-index: 1;
+    top: 100vh;
+    position: relative;
+    -webkit-box-shadow: 0px -4px 3px rgba(25, 91, 157, 0.3);
+    -moz-box-shadow: 0px -4px 3px rgba(25, 91, 157, 0.3);
+    box-shadow: 0px -4px 3px rgba(25, 91, 157, 0.3);
+}
+
+#background-banner {
+    background-image: url('../images/pattern.jpg');
+    background-color: #1db5cb;
+    position:absolute;
+    height: 100vh;
+    background-repeat: repeat-y repeat-x;
+    left: 0;
+    right: 0;
+    /* top: 55px; */
+}
+
+.navbar{
+    z-index: 2;
+}
+
+.section-2 {
+    background-color: white;
+}
+
+.section-3 {
+    background-color: #1db5cb;
+}
+
+    .section-3 h2 {
+        color: white;
+    }
+
+.section-4 {
+    background-color: #9dd1de;
+    color: white;
+}
+
+.section-5 {
+    background-color: white;
+}
+
+.section-6 {
+    background-color: #195C9D;
+    color: white;
+}
+
+.card-block h4 {
+    font-size: 15pt;
+}
+
+.card-block p {
+    font-size: 13pt;
+}
+
+#socialMediaIcons img {
+    min-width: 35px;
+}
+
+/*override bootstrap*/
+/*Accordion override*/
+.card {
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 1px;
+    border: none;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.card-header {
+    background-color: #f7f7f9;
+    margin-bottom: 0;
+    padding: 20px 1.25rem;
+    border: none;
+}
+
+    .card-header a i:first-child {
+        float: left;
+        font-size: 25px;
+        padding: 5px 0;
+        padding-right: 15px;
+        margin: 0 25px 0 0px;
+        color: #195C9D;
+    }
+
+    .card-header a i {
+        float: right;
+        font-size: 30px;
+        width: 1%;
+        margin-top: -25px;
+        margin-right: 10px;
+    }
+
+    .card-header a {
+        width: 97%;
+        float: left;
+        color: #004080;
+    }
+
+    .card-header p {
+        margin: 0;
+    }
+
+    .card-header h3 {
+        margin: 0 0 0px;
+        margin-top: 5px;
+        font-size: 20px;
+        font-family: 'Slabo 27px', serif;
+        font-weight: bold;
+        color: #004080;
+    }
+
+.card-block {
+    -moz-box-flex: 1;
+    flex: 1 1 auto;
+    padding: 20px;
+    color: #232323;
+    box-shadow: inset 0px 4px 5px rgba(0,0,0,0.1);
+    border-top: 1px soild #000;
+    border-radius: 0;
+}
+
+/*Pill-Tab*/
+.pill-link {
+    color: black !important;
+}
+
+.nav-tabs--vertical {
+    border-bottom: none;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.nav-tabs--left {
+    margin: 0;
+}
+
+    .nav-tabs--left .nav-item + .nav-item {
+        margin-top: .25rem;
+    }
+
+    .nav-tabs--left .nav-link {
+        transition: border-color .125s ease-in;
+    }
+
+        .nav-tabs--left .nav-link:hover {
+            background-color: #f7f7f7;
+            border-color: transparent;
+        }
+
+        .nav-tabs--left .nav-link.active {
+            border-bottom-color: #ddd;
+            border-right-color: #fff;
+            border-bottom-left-radius: 0.25rem;
+            border-top-right-radius: 0;
+            margin-right: -1px;
+        }
+
+            .nav-tabs--left .nav-link.active:hover {
+                background-color: #fff;
+                border-color: #0275d8 #fff #0275d8 #0275d8;
+            }
+
+.tab-pane {
+    padding-right: 30px !important;
+}
+
+.overflow-hidden {
+    overflow-x: hidden;
+}
+
+/*End bootstrap override*/
+
+/*Fade in letters*/
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0; /* make things invisible upon start */
+    -webkit-animation: fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards; /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+    .fade-in.one {
+        -webkit-animation-delay: 0.1s;
+        -moz-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .fade-in.two {
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .fade-in.three {
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+
+    .fade-in.four {
+        -webkit-animation-delay: 0.7s;
+        -moz-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+    }
+
+    .fade-in.five {
+        -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+    }
+
+    .fade-in.six {
+        -webkit-animation-delay: 1.1s;
+        -moz-animation-delay: 1.1s;
+        animation-delay: 1.1s;
+    }
+
+    .fade-in.seven {
+        -webkit-animation-delay: 1.3s;
+        -moz-animation-delay: 1.3s;
+        animation-delay: 1.3s;
+    }
+
+    .fade-in.eight {
+        -webkit-animation-delay: 1.5s;
+        -moz-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    }
+
+    .fade-in.one-last {
+        -webkit-animation-delay: 0.1s;
+        -moz-animation-delay: 0.1s;
+        animation-delay: 0.1s;
+    }
+
+    .fade-in.two-last {
+        -webkit-animation-delay: 0.3s;
+        -moz-animation-delay: 0.3s;
+        animation-delay: 0.3s;
+    }
+
+    .fade-in.three-last {
+        -webkit-animation-delay: 0.4s;
+        -moz-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
+    .fade-in.four-last {
+        -webkit-animation-delay: 0.5s;
+        -moz-animation-delay: 0.5s;
+        animation-delay: 0.5s;
+    }
+
+    .fade-in.five-last {
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+    }
+
+    .fade-in.six-last {
+        -webkit-animation-delay: 0.7s;
+        -moz-animation-delay: 0.7s;
+        animation-delay: 0.7s;
+    }
+
+    .fade-in.seven-last {
+        -webkit-animation-delay: 0.8s;
+        -moz-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+    }
+
+    .fade-in.eight-last {
+        -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+    }
+
+/*---make a basic box ---*/
+.letter {
+    position: relative;
+    display: inline-block;
+    color: white;
+    font-family: 'Bevan';
+}
+
+/*end fadein*/
+
+/*Media Queries*/
+@media (max-width: 575px) {
+    .align-middle {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .align-middle h1 {
+            color: white;
+            font-size: 22pt;
+            text-align: left;
+            font-family: 'Bevan';
+        }
+
+    .letter {
+        font-size: 22pt;
+    }
+
+    h2 {
+        font-size: 22pt;
+        font-family: 'Bevan';
+    }
+
+    p, .nav-tabs, .tab-content {
+        font-size: 12pt;
+    }
+
+    #background-banner #myPic {
+        content: url("../images/me_in_color_bluescale_long_new.png");
+        position: fixed;
+        z-index: 0;
+        height: 100vh;
+        max-width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 576px) {
+    .align-middle {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .align-middle h1 {
+            color: white;
+            font-size: 30pt;
+            text-align: left;
+            font-family: 'Bevan';
+        }
+
+    .letter {
+        font-size: 30pt;
+    }
+
+    h2 {
+        font-size: 30pt;
+        font-family: 'Bevan';
+    }
+
+    p, .nav-tabs, .tab-content {
+        font-size: 14pt;
+    }
+
+    #background-banner #myPic {
+        content: url("../images/me_in_color_bluescale_long_new.png");
+        height: 100vh;
+        z-index: 0;
+        max-width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .align-middle {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .align-middle h1 {
+            color: white;
+            font-size: 40pt;
+            text-align: left;
+            font-family: 'Bevan';
+        }
+
+    .letter {
+        font-size: 40pt;
+    }
+
+    h2 {
+        font-size: 40pt;
+        font-family: 'Bevan';
+    }
+
+
+    p, .nav-tabs, .tab-content {
+        font-size: 16pt;
+    }
+
+    #background-banner #myPic {
+        content: url("../images/me_in_color_bluescale_long_new.png");
+        height: 100%;
+        z-index: 0;
+        max-width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .align-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .align-middle h1 {
+            color: white;
+            font-size: 50pt;
+            text-align: left;
+            font-family: 'Bevan';
+        }
+
+    .letter {
+        font-size: 50pt;
+    }
+
+    h2 {
+        font-size: 50pt;
+        font-family: 'Bevan';
+    }
+
+
+    p, .nav-tabs, .tab-content {
+        font-size: 18pt;
+    }
+
+    #background-banner #myPic {
+        content: url("../images/me_in_color_bluescale_new.png");
+        height: 100vh;
+        z-index: 0;
+        max-width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .align-middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+        .align-middle h1 {
+            color: white;
+            font-size: 60pt;
+            text-align: left;
+            font-family: 'Bevan';
+        }
+
+    .letter {
+        font-size: 60pt;
+    }
+
+    h2 {
+        font-size: 60pt;
+        font-family: 'Bevan';
+    }
+
+    p, .nav-tabs, .tab-content {
+        font-size: 20pt;
+    }
+
+    #background-banner #myPic {
+        content: url("../images/me_in_color_bluescale_new.png");
+        height: 100vh;
+        z-index: 0;
+        max-width: 100%;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
