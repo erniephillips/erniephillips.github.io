@@ -1,697 +1,373 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Ernie Phillips - Portfolio</title>
-    <meta name="description" content="Ernie Phillips - Portfolio">
-    <meta name="keywords" content="Ernie,Phillips,Portfolio">
-    <meta name="author" content="Ernie Phillips">
-    <link rel="icon" href="images/laptop-e.png" type="image/png">
-    <meta http-equiv="x-ua-compatible" content="IE=EDGE, IE=11, IE=10">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EPATA LLC | 3D Printing, CAD, Websites, and AI Tools</title>
+    <meta name="description"
+        content="EPATA LLC is a New Jersey-based 3D printing, CAD cleanup, functional prototyping, custom website, and AI workflow business.">
+    <meta name="keywords"
+        content="EPATA LLC, 3D printing, CAD, Fusion 360, FDM printing, functional prototyping, custom websites, AI tools, 3D model sites, New Jersey">
+    <meta name="author" content="EPATA LLC">
+    <link rel="icon" href="images/epata-print-icon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
 </head>
 
 <body>
-    <!--Heading-->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="/web-335/phillips-diagrams.html">Diagrams</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/web-420/phillips-rest.html">REST Presentations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/web-430/phillips-tech-value-stream.html">DevOps Presentations</a>
-                </li>
-            </ul>
+    <nav class="site-nav" aria-label="Primary navigation">
+        <a class="brand" href="#top">
+            <span class="brand-mark print-mark" aria-hidden="true">
+                <span class="print-mark-rail"></span>
+                <span class="print-mark-head"></span>
+                <span class="print-mark-bed"></span>
+            </span>
+            <span>EPATA LLC</span>
+        </a>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#workflow">Workflow</a>
+            <a href="#quote">Quote</a>
+            <a href="#marketplaces">Models</a>
+            <a href="#skills">Skills</a>
+            <a href="bio.html">Bio</a>
+            <a href="#contact">Contact</a>
         </div>
-    </nav> -->
-    <header id="background-banner">
-        <img src="images/me_in_color_bluescale_new.png" alt="Picture of Me" id="myPic" />
-        <div class="align-middle">
-            <h1 class="text-center">
-                Who is
-            </h1>
-            <div class="text-center">
-                <div class="letter fade-in one">E</div>
-                <div class="letter fade-in two">r</div>
-                <div class="letter fade-in three">n</div>
-                <div class="letter fade-in four">i</div>
-                <div class="letter fade-in five">e</div>
-                <br />
-                <div class="letter fade-in eight-last">P</div>
-                <div class="letter fade-in seven-last">h</div>
-                <div class="letter fade-in six-last">i</div>
-                <div class="letter fade-in five-last">l</div>
-                <div class="letter fade-in four-last">l</div>
-                <div class="letter fade-in three-last">i</div>
-                <div class="letter fade-in two-last">p</div>
-                <div class="letter fade-in one-last">s</div>
-            </div>
-            <div class="w-100 text-center mt-1">
-                <a href="#aboutMe" id="btnAboutMe" class="btn btn-secondary">About Me <i
-                        class="fa fa-arrow-down"></i></a>
+    </nav>
+
+    <header class="hero" id="top">
+        <div class="container">
+            <div class="hero-grid">
+                <section class="hero-copy" aria-labelledby="hero-title">
+                    <p class="eyebrow">New Jersey 3D printing, custom websites, CAD, and AI tools</p>
+                    <h1 id="hero-title">Useful parts. Smart sites. Reliable prints.</h1>
+                    <p class="lead">
+                        EPATA LLC turns rough ideas, broken parts, sketches, measurements, and business workflows into
+                        printable models, functional prototypes, custom websites, and AI-assisted tools.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-lg" href="#quote">Request a Quote</a>
+                        <a class="btn btn-outline-light btn-lg" href="#workflow">View Workflow</a>
+                    </div>
+                    <div class="trust-strip" aria-label="EPATA focus areas">
+                        <span>FDM prototyping</span>
+                        <span>Fusion 360 workflow</span>
+                        <span>Custom web and AI tools</span>
+                        <span>MakerWorld and Etsy-ready products</span>
+                    </div>
+                </section>
+
+                <aside class="fabrication-stage" aria-label="EPATA design to print visual">
+                    <div class="cad-window">
+                        <div class="window-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="model-view">
+                            <div class="axis x"></div>
+                            <div class="axis y"></div>
+                            <div class="part part-one"></div>
+                            <div class="part part-two"></div>
+                            <div class="dimension dimension-one">42.0 mm</div>
+                            <div class="dimension dimension-two">fit check</div>
+                        </div>
+                    </div>
+                    <div class="printer-card">
+                        <div class="printer-rail"></div>
+                        <div class="printer-head"></div>
+                        <div class="print-bed">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="part-stack" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <strong>prototype</strong>
+                    </div>
+                </aside>
             </div>
         </div>
     </header>
-    <div class="slide-over-header">
-        <main>
-            <!--About Me-->
-            <div class="container-fluid section-2" id="aboutMe">
-                <div class="container pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-12 overflow-hidden">
-                            <h2 class="header-blue" data-aos="fade-right">About Me</h2>
-                            <p>My name is Ernie Phillips, and I reside in New Jersey. I am a proud father of two beautiful little girls. I have a wonderful wife who constantly pushes me to be my best. In my pastime, I routinely can be found studying for my Master's degree in CIS or pursuing programming studies.                            </p>
-                            <p>My initial programming passion was constructing mobile Android and Apple applications until I built my first website. My first website changed the focus of my desire for coding. If you would like to view my first Android app (a college independent study project), please visit the links below. </p>
-                            <p>I work as a.NET / SharePoint Web Application developer by day. Nothing beats the satisfaction of creating a website, and then seeing it come to life. Back-end programming is my strong suit, but I am always trying to improve my front-end coding skills.</p>
-                            <p>If you have any inquiries or are interested in having a website developed, please contact me through the "Contact Ernie Phillips" link at the bottom of this page.</p>
-                        </div>
-                    </div>
-                    <div class="col-6 offset-3 mt-5">
-                        <div class="row" id="socialMediaIcons">
-                            <div class="col-3" data-aos="flip-left">
-                                <a href="https://www.facebook.com/phillips.ernie" target="_blank">
-                                    <img src="images/facebook_blue.png" class="img img-fluid" alt="Facebook Icon"
-                                        id="facebook_icon" />
-                                </a>
-                            </div>
-                            <div class="col-3" data-aos="flip-down">
-                                <a href="https://github.com/erniephillips" target="_blank">
-                                    <img src="images/github_blue.png" class="img img-fluid" alt="Github Icon"
-                                        id="github_icon" />
-                                </a>
-                            </div>
-                            <div class="col-3" data-aos="flip-down">
-                                <a href="https://www.linkedin.com/in/ernie-phillips-1466435a/" target="_blank">
-                                    <img src="images/linkedin_blue.png" class="img img-fluid" alt="Linked Icon"
-                                        id="linkedin_icon" />
-                                </a>
-                            </div>
-                            <div class="col-3" data-aos="flip-left">
-                                <a href="https://github.com/erniephillips/allthingsandroid-AndroidApp" target="_blank">
-                                    <img src="images/android_blue.png" class="img img-fluid" alt="Android Icon"
-                                        id="android_icon" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+
+    <main>
+        <section class="snapshot section-pad">
+            <div class="container">
+                <div class="snapshot-grid">
+                    <article>
+                        <strong>01</strong>
+                        <h2>EPATA builds where digital tools and physical parts meet.</h2>
+                    </article>
+                    <p>
+                        The focus is deliberately practical: CAD cleanup, functional prototypes, replacement parts,
+                        custom websites, AI-assisted intake, online storefront thinking, and small business tools made
+                        with a bias toward durable, useful results.
+                    </p>
                 </div>
             </div>
-            <!--Experience-->
-            <div class="container-fluid section-3">
-                <div class="container pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-12 overflow-hidden">
-                            <h2 data-aos="fade-right">Experience</h2>
-                            <div id="accordion" role="tablist" aria-multiselectable="true" class="overflow-hidden">
-                                <div class="card" data-aos="fade-left">
-                                    <div class="card-header" role="tab" id="headingOne">
-                                        <div class="mb-0">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                                aria-expanded="false" aria-controls="collapseOne" class="collapsed">
-                                                <i class="fa fa-briefcase" aria-hidden="true"></i>
-                                                <h3>Work</h3>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                                        aria-expanded="false">
-                                        <div class="card-block">
-                                            <h4>Summary</h4>
-                                            <p>I am an accomplished web developer with secure communication, software
-                                                development, time management, team collaboration, and organization
-                                                skills. I have a proven track record in delivering impactful websites
-                                                both as a developer and a technical lead while having the ability to
-                                                evaluate and evolve with cutting edge web development technologies. I am
-                                                often praised for exceptional problem-solving skills and sense of
-                                                urgency with meeting project deadlines and customer satisfaction.</p>
-                                            <hr />
-                                            <div class="row mt-5">
-                                                <div class="col-12 col-md-6">
-                                                    <p class="font-weight-bold">Universal Technical Resource
-                                                        Services<br />.NET Web Application Developer</p>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <p class="float-right font-weight-bold">
-                                                        November 2015 - September 2022
-                                                    </p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>UTRS was founded in 1985 as a commercial information technology
-                                                        professional placement business. In 1995, they expanded their
-                                                        services to include consulting and engineering in diverse
-                                                        technical areas while their customer base grew to include
-                                                        government clients such as the Department of Defense (DOD), the
-                                                        Federal Aviation Administration (FAA), and the Federal
-                                                        Laboratory Consortium for Technology Transfer (FLC).</p>
-                                                    <p>In my time at UTRS, I have lead, maintained, and developed many
-                                                        large-scale Oracle and .NET web applications. I have trained
-                                                        entry-level developers on how to build &amp; maintain scalable
-                                                        sites with modern technologies.</p>
-                                                    <p>I have converted Oracle web applications to .NET MVC using
-                                                        RESTful API architecture.</p>
-                                                    <p>I have also spent quite some time programming using the Client
-                                                        Side Object Model in SharePoint 2013.</p>
-                                                    <a href="https://www.utrs.com/" target="_blank"
-                                                        class="btn btn-sm btn-outline-primary">Visit UTRS<i
-                                                            class="fa fa-chevron-right ml-2" aria-hidden="true"></i></a>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div class="row mt-5">
-                                                <div class="col-12 col-md-6">
-                                                    <p class="font-weight-bold">National Kitchen &amp; Bath
-                                                        Association<br />.NET Web Developer</p>
-                                                </div>
-                                                <div class="col-12 col-md-6">
-                                                    <p class="float-right font-weight-bold">
-                                                        May 2014 - March 2016
-                                                    </p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>The National Kitchen + Bath Association (NKBA) is a non-profit
-                                                        trade group that promotes professionalism in the kitchen and
-                                                        bath industry. Established in 1963 as a network of kitchen
-                                                        dealers, it has evolved into the premier association of
-                                                        designers, retailers, remodelers, manufacturers, distributors,
-                                                        fabricators, installers and other industry professionals.</p>
-                                                    <p>In my time at NKBA, I primarily maintained and developed one
-                                                        large site using a content management system (CMS) called
-                                                        Sitefinity. I built out many modules using the CMS.</p>
-                                                    <p>I also experienced my first upgrade of a.NET framework from .NET
-                                                        2 to .NET 4, along with with upgrading to a new customer
-                                                        relationship management (CRM) system.</p>
-                                                    <p>Other tasks consisted of maintaining smaller sites.</p>
-                                                    <a href="https://www.nkba.org/" target="_blank"
-                                                        class="btn btn-sm btn-outline-primary">Visit NKBA<i
-                                                            class="fa fa-chevron-right ml-2" aria-hidden="true"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card" data-aos="fade-right">
-                                    <div class="card-header" role="tab" id="headingTwo">
-                                        <div class="mb-0">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
-                                                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                                <h3>College</h3>
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo"
-                                        aria-expanded="false">
-                                        <div class="card-block">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <p class="font-weight-bold">(AAS) County College of Morris, Randolph, NJ
-                                                    </p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p class="float-right font-weight-bold">
-                                                        Graduated Date: May 2014
-                                                    </p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>Degree: Applied Associate of Computer Science</p>
-                                                    <a href="https://www.ccm.edu/" target="_blank"
-                                                        class="btn btn-sm btn-outline-primary">Visit CCM<i
-                                                            class="fa fa-chevron-right ml-2" aria-hidden="true"></i></a>
-                                                </div>
-                                            </div>
-                                            <div class="row mt-5">
-                                                <div class="col-6">
-                                                    <p class="font-weight-bold">(BS) Bellevue University, Bellevue, NE</p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p class="float-right font-weight-bold">
-                                                        Graduated Date: August 2020
-                                                    </p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>Major: Web Development</p>
-                                                </div>
-                                            </div>
-                                            <div class="row mt-5">
-                                                <div class="col-6">
-                                                    <p class="font-weight-bold">(MS) Bellevue University, Bellevue, NE</p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <p class="float-right font-weight-bold">
-                                                        Graduation Date: November 2020 - August 2022
-                                                    </p>
-                                                </div>
-                                                <div class="col-12">
-                                                    <p>Concentration: Information Technology Systems with conc. Software Development</p>
-                                                    <a href="https://www.bellevue.edu/" target="_blank"
-                                                        class="btn btn-sm btn-outline-primary">Visit BU<i
-                                                            class="fa fa-chevron-right ml-2" aria-hidden="true"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        </section>
+
+        <section class="services section-pad" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Services</p>
+                    <h2>Built around the jobs people actually ask for.</h2>
+                </div>
+                <div class="service-grid">
+                    <article class="service-card featured-card">
+                        <span class="service-icon" aria-hidden="true">01</span>
+                        <h3>Functional Prototypes</h3>
+                        <p>Brackets, organizers, housings, fixtures, templates, replacement pieces, and proof-of-concept parts.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true">02</span>
+                        <h3>CAD Cleanup</h3>
+                        <p>Repair files, adjust geometry, prep models for print, and make design changes with manufacturing in mind.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true">03</span>
+                        <h3>Small-Batch Printing</h3>
+                        <p>Low-volume FDM runs for practical parts where turnaround, fit, and repeatability matter.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true">04</span>
+                        <h3>Repair and Reverse Engineering</h3>
+                        <p>Measure the old part, model a replacement, prototype the fit, and improve the weak points.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true">05</span>
+                        <h3>Print-Ready File Prep</h3>
+                        <p>STL/3MF review, orientation planning, tolerance notes, material fit, and practical print settings.</p>
+                    </article>
+                    <article class="service-card accent-card">
+                        <span class="service-icon" aria-hidden="true">06</span>
+                        <h3>Websites and AI Tools</h3>
+                        <p>Custom sites, quote forms, model-upload flows, AI-guided intake, and digital tools around 3D printing work.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true">07</span>
+                        <h3>Marketplace-Ready Products</h3>
+                        <p>Printable designs, product photos, usage notes, listings, and presentation for MakerWorld or Etsy-style sales.</p>
+                    </article>
+                    <article class="service-card">
+                        <span class="service-icon" aria-hidden="true">08</span>
+                        <h3>Custom Client Sites</h3>
+                        <p>Small business websites, service pages, intake forms, galleries, and lightweight tools built around real workflows.</p>
+                    </article>
                 </div>
             </div>
-            <!--Portfolio-->
-            <div class="container-fluid section-4">
-                <div class="container pt-5 pb-5">
-                    <h2 data-aos="fade-right">Portfolio</h2>
-                    <h3>School Projects</h3>
-                    <div class="row mt-3">
-                        <div class="col-12 overflow-hidden">
-                            <h5>Sophomore Year</h5>
-                            <div class="row text-center text-lg-left">
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-right">
-                                        <a href="https://erniephillips.github.io/allthingsandroid/" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/allthingsandroid.png"
-                                                alt="allthingsandroid">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">All Things
-                                            Android Website</figcaption>
-                                    </figure>
-                                </div><!--  All Things Android Website -->
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-right">
-                                        <a href="https://github.com/erniephillips/allthingsandroid-AndroidApp"
-                                            target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100"
-                                                src="images/allthingsandroid_app.png" alt="allthingsandroid_repo">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                            All Things Android - Java Android App <br /> (Independent study)
-                                        </figcaption>
-                                    </figure>
-                                </div><!--  All Things Android Website - Android App -->
-                            </div>
-                        </div>
-                    </div><!-- Sophomore Year Projects-->
-                    <div class="row">
-                        <div class="col-12 overflow-hidden">
-                            <h5>Junior Year</h5>
-                            <div class="row text-center text-lg-left">
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-right">
-                                        <a href="https://erniephillips.github.io/bioSite/" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/biosite.png"
-                                                alt="biositerepo">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">BioSite
-                                            Website <br />
-                                            (Bootstrap 4) </figcaption>
-                                    </figure>
-                                </div><!-- BioSite -->
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-right">
-                                        <a href="https://phillips-ems.herokuapp.com/" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/ems.png" alt="EMS">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                            Employee Management System <br /> (NodeJS, EJS & Bootstrap 4)
-                                        </figcaption>
-                                    </figure>
-                                </div><!-- EMS -->
-                            </div>
-                        </div>
-                    </div><!-- Junior Year Projects -->
-                    <div class="row">
-                        <div class="col-12 overflow-hidden">
-                            <h5>Senior Year</h5>
-                            <div class="row text-center text-lg-left">
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-right">
-                                        <a href="https://phillips-api-gateway.herokuapp.com/" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/api-gateway.png"
-                                                alt="API Gateway">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                            Users API Gateway<br /> (API on NodeJS for MongoDB)</figcaption>
-                                    </figure>
-                                </div><!-- API Gateway -->
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-right">
-                                        <a href="https://erniephillips.github.io/phillips-computer-repair-shop/"
-                                            target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100"
-                                                src="images/phillips-computer-repair-shop.png" alt="PCRS">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                            Phillips Computer Repair Shop<br />(GitHub Pages Angular 9 App)
-                                        </figcaption>
-                                    </figure>
-                                </div><!-- Phillips Computer Repair Shop -->
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-right">
-                                        <a href="https://phillips-nodebucket.herokuapp.com/" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/nodebucket.png"
-                                                alt="nodebucket">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                            nodebucket<br />(MEAN Stack Website using Flexbox)<br />(Individual Capstone
-                                            Project)
-                                        </figcaption>
-                                    </figure>
-                                </div><!-- nodebucket -->
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-right">
-                                        <a href="https://fce-bcrs.herokuapp.com/" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100"
-                                                src="images/bobs_computer_repair_shop.png" alt="BCRS">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                            Bob's Computer Repair Shop<br />(MEAN Stack Website using
-                                            Flexbox)<br />(Group Capstone Project)
-                                        </figcaption>
-                                    </figure>
-                                </div><!-- Bob's Computer Repair Shop -->
-                            </div>
-                        </div>
-                    </div><!-- Senior Year Projects -->
-                    <div class="row">
-                        <div class="col-12 overflow-hidden">
-                            <h5>Post-Graduate Projects</h5>
-                            <div class="row text-center text-lg-left">
-                              <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                <figure class="figure" data-aos="fade-right">
-                                  <a href="https://erniephillips.github.io/MSCIS-515-Group-3-Project/" target="_blank">
-                                    <img class="img-fluid img-thumbnail w-100" src="images/Small-Business-Moving-Cloud-Project.PNG"
-                                         alt="Small Business and Moving to the Cloud Project">
-                                  </a>
-                                  <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                    Small Business and Moving to the Cloud Project
-                                  </figcaption>
-                                </figure>
-                              </div><!-- Small Business and Moving to the Cloud Project -->
-                              <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                <figure class="figure" data-aos="fade-right">
-                                  <a href="https://phillips-bookclub.herokuapp.com/" target="_blank">
-                                    <img class="img-fluid img-thumbnail w-100" src="images/Bookclub-Site.PNG"
-                                         alt="Bookclub Site">
-                                  </a>
-                                  <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                    Spring Boot MVC Bookclub Website
-                                  </figcaption>
-                                  <small>
-                                    username: user<br />
-                                    password: password
-                                  </small>
-                                </figure>
-                              </div><!-- Bookclub website -->
-                              <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                <figure class="figure" data-aos="fade-right">
-                                  <a href="https://github.com/erniephillips/WeightApp/tree/master/APK" target="_blank">
-                                    <img class="img-fluid img-thumbnail w-100" src="images/android-weight-app.png"
-                                         alt="Xamarin Android APK - Weight App">
-                                  </a>
-                                  <figcaption class="figure-caption font-weight-bold text-center mt-0">
-                                    Xamarin Android APK - Weight App <br />(Graduate Capstone)
-                                  </figcaption>
-                                </figure>
-                              </div><!-- Xamarin Android APK - Weight App -->
-                            </div>
-                        </div>
-                    </div><!-- Post-Graduate Projects -->
-                    <!-- <div class="row"> -->
-                    <!-- <div class="col-12 overflow-hidden">
-                            <h5>Source Code</h5> -->
-                    <!-- <div class="row text-center text-lg-left"> -->
-                    <!-- <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-right">
-                                        <a href="https://github.com/erniephillips/bioSite" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/biositerepo.png"
-                                                alt="biositerepo">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">BioSite
-                                            source code</figcaption>
-                                    </figure>
-                                </div> -->
-                    <!-- BioSite Repo -->
-                    <!-- <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-left">
-                                        <a href="https://github.com/erniephillips/erniephillips.github.io"
-                                            target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/portfolio_repo.png"
-                                                alt="portfolio_repo">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">Source code
-                                            for this site</figcaption>
-                                    </figure>
-                                </div> -->
-                    <!-- Personal Portfolio Source Code-->
-                    <!-- <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-left">
-                                        <a href="https://github.com/erniephillips/erniephillips.github.io/tree/master/mockup-files"
-                                            target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/portfolio_mockup.png"
-                                                alt="portfolio_mockup">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">Wireframe
-                                            for this portfolio site</figcaption>
-                                    </figure>
-                                </div> -->
-                    <!-- Personal Portfolio Prototypes -->
-                    <!-- <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                <figure class="figure" data-aos="fade-right">
-                                    <a href="https://github.com/erniephillips/web-200" target="_blank">
-                                        <img class="img-fluid img-thumbnail w-100" src="images/web-200.png"
-                                            alt="Web-200">
-                                    </a>
-                                    <figcaption class="figure-caption font-weight-bold text-center mt-0">College
-                                        Curriculum</figcaption>
-                                </figure>
-                            </div> -->
-                    <!-- <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                <figure class="figure" data-aos="fade-down-right">
-                                    <a href="https://github.com/erniephillips/web-201" target="_blank">
-                                        <img class="img-fluid img-thumbnail w-100" src="images/web-201.png"
-                                            alt="Web-201">
-                                    </a>
-                                    <figcaption class="figure-caption font-weight-bold text-center mt-0">College
-                                        Curriculum</figcaption>
-                                </figure>
-                            </div> -->
-                    <!-- <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                <figure class="figure" data-aos="fade-down-left">
-                                    <a href="https://github.com/erniephillips/web-231" target="_blank">
-                                        <img class="img-fluid img-thumbnail w-100" src="images/web-231.png"
-                                            alt="Web-231">
-                                    </a>
-                                    <figcaption class="figure-caption font-weight-bold text-center mt-0">College
-                                        Curriculum</figcaption>
-                                </figure>
-                            </div> -->
-                    <!-- <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                <figure class="figure" data-aos="fade-left">
-                                    <a href="https://github.com/erniephillips/web-321" target="_blank">
-                                        <img class="img-fluid img-thumbnail w-100" src="images/web-321.png"
-                                            alt="Web-321">
-                                    </a>
-                                    <figcaption class="figure-caption font-weight-bold text-center mt-0">College
-                                        Curriculum</figcaption>
-                                </figure>
-                            </div> -->
-                    <!-- </div>
-                        </div> -->
-                    <!-- </div> -->
-                    <!-- Source Code for School Projects -->
-                    <div class="row mt-5">
-                        <!--<div class="col-12 overflow-hidden">
-                            <h3>Professional</h3>
-                            <div class="row text-center text-lg-left">
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-down-left">
-                                        <a href="https://nkba.org/" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/nkba.png" alt="nkba">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">Past
-                                            employer's website</figcaption>
-                                    </figure>
-                                </div>
-                                <div class="col-lg-3 col-md-4 col-6 overflow-hidden">
-                                    <figure class="figure" data-aos="fade-left">
-                                        <a href="https://ac.ccdc.army.mil" target="_blank">
-                                            <img class="img-fluid img-thumbnail w-100" src="images/ccdc.png" alt="ccdc">
-                                        </a>
-                                        <figcaption class="figure-caption font-weight-bold text-center mt-0">Current
-                                            employer's website</figcaption>
-                                    </figure>
-                                </div>
-                            </div>
-                        </div>-->
-                    </div><!-- Professional Sites -->
-                </div>
-            </div>
-            <!--Skills-->
-            <div class="container-fluid section-5">
-                <div class="container pt-5 pb-5">
-                    <div class="row">
-                        <div class="col-12 overflow-hidden">
-                            <h2 class="header-blue" data-aos="fade-right">Skills</h2>
-                            <div class="row">
-                                <div class="col-12 col-md-6 col-lg-6">
-                                    <div class="d-flex flex-row mt-2">
-                                        <ul class="nav nav-tabs nav-tabs--vertical nav-tabs--left" role="navigation">
-                                            <li class="nav-item">
-                                                <a href="#category_1" id="link_1" class="nav-link pill-link"
-                                                    data-toggle="tab" role="tab" aria-controls="category_1">
-                                                    Client-Side
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#category_2" id="link_2" class="nav-link pill-link"
-                                                    data-toggle="tab" role="tab" aria-controls="category_2">
-                                                    Server-Side
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#category_3" id="link_3" class="nav-link pill-link"
-                                                    data-toggle="tab" role="tab" aria-controls="category_3">
-                                                    Web Services
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#category_4" id="link_4" class="nav-link pill-link"
-                                                    data-toggle="tab" role="tab" aria-controls="category_4">
-                                                    Database
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#category_5" id="link_5" class="nav-link pill-link"
-                                                    data-toggle="tab" role="tab" aria-controls="category_5">
-                                                    Development Tools
-                                                </a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a href="#category_6" id="link_6" class="nav-link pill-link"
-                                                    data-toggle="tab" role="tab" aria-controls="category_6">
-                                                    CRM/CMS
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content col-8">
-                                            <div class="tab-pane active" id="category_1" role="tabpanel">
-                                                <ul class="fa-ul">
-                                                    <li><i class="fa-li fa fa-code"></i>HTML5</li>
-                                                    <li><i class="fa-li fa fa-code"></i>CSS3</li>
-                                                    <li><i class="fa-li fa fa-code"></i>JavaScript</li>
-                                                    <li><i class="fa-li fa fa-code"></i>jQuery</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Bootstrap 3 & 4</li>
-                                                    <li><i class="fa-li fa fa-code"></i>AJAX</li>
-                                                    <li><i class="fa-li fa fa-code"></i>XML</li>
-                                                    <li><i class="fa-li fa fa-code"></i>JSON</li>
-                                                    <li><i class="fa-li fa fa-code"></i>AngularJS</li>
-                                                    <li><i class="fa-li fa fa-code"></i>PUG</li>
-                                                    <li><i class="fa-li fa fa-code"></i>EJS</li>
-                                                </ul>
-                                            </div>
-                                            <div class="tab-pane fade" id="category_2" role="tabpanel">
-                                                <ul class="fa-ul">
-                                                    <li><i class="fa-li fa fa-code"></i>Java</li>
-                                                    <li><i class="fa-li fa fa-code"></i>C#</li>
-                                                    <li><i class="fa-li fa fa-code"></i>VB.NET</li>
-                                                    <li><i class="fa-li fa fa-code"></i>ASP.NET Web Forms/MVC</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Classic ASP</li>
-                                                    <li><i class="fa-li fa fa-code"></i>ADO.NET</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Oracle JSF Trinidad Framework
-                                                    </li>
-                                                    <li><i class="fa-li fa fa-code"></i>LINQ</li>
-                                                    <li><i class="fa-li fa fa-code"></i>NodeJS</li>
-                                                    <li><i class="fa-li fa fa-code"></i>ExpressJS</li>
-                                                </ul>
-                                            </div>
-                                            <div class="tab-pane fade" id="category_3" role="tabpanel">
-                                                <ul class="fa-ul">
-                                                    <li><i class="fa-li fa fa-code"></i>WCF</li>
-                                                    <li><i class="fa-li fa fa-code"></i>REST</li>
-                                                    <li><i class="fa-li fa fa-code"></i>SOAP</li>
-                                                </ul>
-                                            </div>
-                                            <div class="tab-pane fade" id="category_4" role="tabpanel">
-                                                <ul class="fa-ul">
-                                                    <li><i class="fa-li fa fa-code"></i>T-SQL</li>
-                                                    <li><i class="fa-li fa fa-code"></i>PL-SQL</li>
-                                                    <li><i class="fa-li fa fa-code"></i>MySql</li>
-                                                    <li><i class="fa-li fa fa-code"></i>MongoDB</li>
-                                                </ul>
-                                            </div>
-                                            <div class="tab-pane fade" id="category_5" role="tabpanel">
-                                                <ul class="fa-ul">
-                                                    <li><i class="fa-li fa fa-code"></i>Sql Developer</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Sql Server 2008, 2012, 2016</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Visual Studio 2008 - 2019</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Visual Studio Code</li>
-                                                    <li><i class="fa-li fa fa-code"></i>NetBeans</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Dream Weaver</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Eclipse</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Team Foundation Server</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Fiddler 2/4</li>
-                                                    <li><i class="fa-li fa fa-code"></i>GIT</li>
-                                                    <li><i class="fa-li fa fa-code"></i>NPM</li>
-                                                </ul>
-                                            </div>
-                                            <div class="tab-pane fade" id="category_6" role="tabpanel">
-                                                <ul class="fa-ul">
-                                                    <li><i class="fa-li fa fa-code"></i>Telerik Sitefinity 3.7, 7.3</li>
-                                                    <li><i class="fa-li fa fa-code"></i>WordPress</li>
-                                                    <li><i class="fa-li fa fa-code"></i>SharePoint 2010, 2013</li>
-                                                    <li><i class="fa-li fa fa-code"></i>DotNetNuke</li>
-                                                    <li><i class="fa-li fa fa-code"></i>iMist</li>
-                                                    <li><i class="fa-li fa fa-code"></i>Aptify 5.5.3</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 d-none d-lg-block d-md-block">
-                                    <img data-aos="flip-up" src="images/programming_icon.png" class="img img-fluid"
-                                        alt="Programming Icon" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <!--Contact Me-->
-        <footer class="container-fluid section-6">
-            <div class="container pt-5 pb-5">
-                <div class="row">
-                    <div class="col-12 overflow-hidden">
-                        <h2 data-aos="fade-right">Contact Me</h2>
-                        <p>If you would like to work with me, see my resume, or have any questions - send me an email.
+        </section>
+
+        <section class="workflow section-pad" id="workflow">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <p class="section-kicker">CAD and Fusion 360 workflow</p>
+                        <h2>Professional tooling for legitimate design-to-print work.</h2>
+                        <p>
+                            EPATA LLC benefits from CAD and web software that supports parametric modeling, dimensional
+                            control, model intake, AI-assisted review, clean exports, and repeatable revisions. That
+                            matters when a part needs to fit, survive use, be quoted clearly, and be made again later.
                         </p>
-                        <a data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out"
-                            data-aos-duration="1000" href="mailto:erniephillips.android@gmail.com"
-                            class="btn btn-lg btn-primary mt-3">Contact Ernie Phillips<i
-                                class="fa fa-chevron-right ml-2" aria-hidden="true"></i></a>
+                        <div class="capability-row" aria-label="CAD capabilities">
+                            <span>Parametric modeling</span>
+                            <span>Assemblies</span>
+                            <span>Manufacturing exports</span>
+                            <span>AI-assisted intake</span>
+                        </div>
+                    </div>
+                    <ol class="timeline">
+                        <li>
+                            <span>Measure</span>
+                            <p>Photos, dimensions, constraints, failure points, and the job the part needs to do.</p>
+                        </li>
+                        <li>
+                            <span>Model</span>
+                            <p>CAD geometry built for fit, print orientation, tolerances, and material limits.</p>
+                        </li>
+                        <li>
+                            <span>Prototype</span>
+                            <p>Print, inspect, test, and revise until the part performs the intended work.</p>
+                        </li>
+                        <li>
+                            <span>Deliver</span>
+                            <p>Finished parts, source files when appropriate, and practical notes for the next run.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section class="quote section-pad" id="quote">
+            <div class="container">
+                <div class="quote-grid">
+                    <div>
+                        <p class="section-kicker">Fast project intake</p>
+                        <h2>Send enough detail to get a useful answer.</h2>
+                        <p>
+                            A good first message does not need to be perfect. Send the goal, a few measurements, the
+                            rough size, quantity, deadline, and a photo or sketch if you have one.
+                        </p>
+                        <a class="btn btn-primary btn-lg" href="mailto:erniephillips.android@gmail.com?subject=EPATA%20LLC%20Project%20Request&body=What%20do%20you%20need%20made%2C%20printed%2C%20modeled%2C%20coded%2C%20or%20automated%3F%0A%0ADimensions%2C%20rough%20size%2C%20or%20website%20goal%3A%0AQuantity%20or%20site%20features%3A%0AMaterial%2C%20use%20case%2C%20or%20AI%20workflow%3A%0ADeadline%3A%0AAnything%20else%20I%20should%20know%3A">Email Project Details</a>
+                    </div>
+                    <div class="quote-list">
+                        <div>
+                            <strong>Photos</strong>
+                            <span>Part, space, broken area, or sketch.</span>
+                        </div>
+                        <div>
+                            <strong>Measurements</strong>
+                            <span>Length, width, height, holes, clearances.</span>
+                        </div>
+                        <div>
+                            <strong>Use Case</strong>
+                            <span>Indoor, outdoor, heat, load, cosmetic, functional, website, or AI workflow.</span>
+                        </div>
+                        <div>
+                            <strong>Quantity</strong>
+                            <span>One prototype, a few tests, or a repeatable batch.</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+
+        <section class="business-fit section-pad">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Good fits</p>
+                    <h2>Projects that belong at EPATA.</h2>
+                </div>
+                <div class="fit-grid">
+                    <article class="fit-card">
+                        <span aria-hidden="true">A</span>
+                        <h3>Replacement and Repair Parts</h3>
+                        <p>Small plastic parts that are unavailable, discontinued, awkward to source, or worth improving.</p>
+                    </article>
+                    <article class="fit-card">
+                        <span aria-hidden="true">B</span>
+                        <h3>Jigs, Fixtures, and Shop Helpers</h3>
+                        <p>Simple tools that make measuring, holding, routing, organizing, or repeated work easier.</p>
+                    </article>
+                    <article class="fit-card">
+                        <span aria-hidden="true">C</span>
+                        <h3>AI-Driven 3D Printing Sites</h3>
+                        <p>Websites that collect customer details, accept model uploads, guide quote intake, or help review 3D files.</p>
+                    </article>
+                    <article class="fit-card">
+                        <span aria-hidden="true">D</span>
+                        <h3>Sellable Digital and Printed Products</h3>
+                        <p>MakerWorld uploads, Etsy-style product ideas, listing structure, and repeatable models that can become a catalog.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="marketplaces section-pad" id="marketplaces">
+            <div class="container">
+                <div class="marketplace-grid">
+                    <div>
+                        <p class="section-kicker">Models and marketplaces</p>
+                        <h2>EPATA can build the product, the page, and the workflow around it.</h2>
+                        <p>
+                            Marketplace work is more than uploading a file. A useful model needs clear presentation,
+                            print notes, fit expectations, photos, support guidance, and a path for customers to ask for
+                            modifications or related parts.
+                        </p>
+                    </div>
+                    <div class="marketplace-card">
+                        <strong>Public model presence</strong>
+                        <p>MakerWorld uploads, Etsy shop listings, customer-facing model pages, and custom sites that can support future catalogs or quote flows.</p>
+                        <a class="btn btn-primary" href="https://makerworld.com/en/@epata.llc/upload" target="_blank"
+                            rel="noopener">View MakerWorld</a>
+                        <a class="btn btn-outline-primary" href="https://www.etsy.com/shop/EPATA3dPrints" target="_blank"
+                            rel="noopener">View Etsy Shop</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills section-pad" id="skills">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Skills</p>
+                    <h2>A practical stack for parts, websites, files, and AI workflows.</h2>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-block">
+                        <h3>3D Printing and CAD</h3>
+                        <ul>
+                            <li>FDM prototyping</li>
+                            <li>CAD file cleanup</li>
+                            <li>Design for manufacturability</li>
+                            <li>Part iteration and fit testing</li>
+                            <li>Fusion 360-focused workflow</li>
+                        </ul>
+                    </div>
+                    <div class="skill-block">
+                        <h3>Websites and AI</h3>
+                        <ul>
+                            <li>Custom business websites</li>
+                            <li>AI-assisted intake flows</li>
+                            <li>3D model upload experiences</li>
+                            <li>Quote and request forms</li>
+                            <li>Customer workflow automation</li>
+                        </ul>
+                    </div>
+                    <div class="skill-block">
+                        <h3>Development</h3>
+                        <ul>
+                            <li>Custom websites and service pages</li>
+                            <li>Form-driven quote workflows</li>
+                            <li>APIs and data-backed features</li>
+                            <li>AI-assisted business tools</li>
+                            <li>Model review and upload concepts</li>
+                        </ul>
+                    </div>
+                    <div class="skill-block">
+                        <h3>Customer Delivery</h3>
+                        <ul>
+                            <li>Project scoping</li>
+                            <li>Measurement review</li>
+                            <li>Revision notes</li>
+                            <li>Practical recommendations</li>
+                            <li>Clear quote and build intake</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contact section-pad" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div>
+                    <p class="section-kicker">EPATA LLC</p>
+                    <h2>Bring the odd part, website idea, AI workflow, sketch, or 3D model.</h2>
+                    <p>
+                        Send a short note with what you need made, fixed, modeled, printed, automated, or put online.
+                        Photos, measurements, broken parts, sketches, rough ideas, and 3D model files are welcome.
+                    </p>
+                </div>
+                <div class="contact-card">
+                    <a class="btn btn-light btn-lg" href="mailto:erniephillips.android@gmail.com">Email EPATA LLC</a>
+                    <a class="social-link" href="#quote">Project Intake</a>
+                    <a class="social-link" href="#workflow">Design Workflow</a>
+                    <a class="social-link" href="https://makerworld.com/en/@epata.llc/upload" target="_blank"
+                        rel="noopener">MakerWorld</a>
+                    <a class="social-link" href="https://www.etsy.com/shop/EPATA3dPrints" target="_blank"
+                        rel="noopener">Etsy Shop</a>
+                    <p class="fine-print">Based in New Jersey. Built for useful, honest, practical work.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
