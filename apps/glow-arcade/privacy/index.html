@@ -47,7 +47,7 @@
   <section>
     <h2>Optional sign-in, purchases, and restoration</h2>
     <p>When paid access is available and an adult chooses to purchase or restore it, Google sign-in and Google Play handle identity and payment. EPATA LLC does not receive your card number. Our verification service checks your Google identity and Play purchase before granting paid benefits. Protected play does not start the online billing connection, Google sign-in, or server purchase-verification requests. An existing, valid signed access proof may continue to provide previously purchased benefits until it expires.</p>
-    <p>Verification uses a hashed Google account identifier, the app and product identifiers, a purchase token, purchase-status and verification times, and your installation’s public key or fingerprint. Purchase tokens in our verification database are encrypted. Raw Google identity tokens and Google profile fields are not stored in that database. The installation’s private signing key stays in Android Keystore on your device.</p>
+    <p>Verification uses a hashed Google account identifier, the app and product identifiers, a purchase token, purchase-status and verification times, and your installation’s public key or fingerprint. A Google identity token can also contain your name, email address, and profile-picture URL. Our service receives that token temporarily to verify identity; it does not fetch the profile picture or retain the token or those profile fields in the purchase database. Purchase tokens in that database are encrypted. The installation’s private signing key stays in Android Keystore on your device.</p>
     <p>The app keeps signed access proofs in its private storage. Existing verified access can work offline for up to 24 hours between checks, subject to a subscription’s paid-through date. Google and our verification service are contacted when sign-in, purchase verification, restoration, or an access refresh requires them. Your local game history is not part of these verification requests.</p>
   </section>
 
@@ -66,7 +66,7 @@
 
   <section>
     <h2>Service providers and security</h2>
-    <p>Google provides advertising, consent, sign-in, and Play billing services. Our purchase-verification service handles only the information needed for verified access. Connections to that service use HTTPS. Local access credentials are kept outside the game’s JavaScript storage, and private server credentials are not included in the app.</p>
+    <p>Google provides advertising, consent, sign-in, and Play billing services. Microsoft Azure hosts our purchase-verification service and its encrypted purchase-token storage in Canada Central. Azure also processes network and operational information needed to deliver that service. Connections to the service use HTTPS. Local access credentials are kept outside the game’s JavaScript storage, and private server credentials are not included in the app.</p>
     <p>We will update this policy when the app’s information practices change. The date at the top identifies this version.</p>
   </section>
 
