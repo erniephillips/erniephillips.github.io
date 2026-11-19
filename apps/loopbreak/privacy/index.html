@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy information for EPATA LLC's regular loop-capture Android game, package com.epata.loopbreak.">
+  <title>Privacy policy | EPATA Android game</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #182638; background: #f5f7fa; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-size: 17px; line-height: 1.65; }
+    main { max-width: 900px; margin: 0 auto; padding: clamp(24px, 5vw, 56px); background: #fff; }
+    a { color: #155b91; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.15; letter-spacing: -.025em; margin: 16px 0; }
+    h2 { font-size: 24px; line-height: 1.3; margin: 38px 0 12px; }
+    p { margin: 12px 0; }
+    li { margin: 8px 0; }
+    ul { padding-left: 24px; }
+    code { font-size: .88em; overflow-wrap: anywhere; }
+    .brand { font-size: 14px; font-weight: 700; letter-spacing: .08em; }
+    .date, footer { color: #526174; font-size: 14px; }
+    footer { margin-top: 40px; padding-top: 18px; border-top: 1px solid #d8e0e9; }
+  </style>
+</head>
+<body>
+<main>
+  <a class="brand" href="https://epatallc.com/">EPATA LLC</a>
+  <h1>Privacy policy</h1>
+  <p class="date">Last updated: November 19, 2026</p>
+  <p>This policy covers EPATA LLC's regular loop-capture Android game, identified by package <code>com.epata.loopbreak</code>. The game's final public name is being selected.</p>
+  <p><strong>Version described:</strong> the reviewed regular development version is 0.1.8. It uses Google test-ad units. Live checkout and the app's purchase-verification connection are not configured in this version. The conditional store section below explains the implemented data flow if those online features are activated; it does not announce their availability.</p>
+
+  <h2>Playing and saving on your device</h2>
+  <p>Core gameplay works without signing in to an EPATA service. The game saves progress on your device, including completed levels and stars, scores, earned credits, owned and selected colors, tutorial completion, daily-run results, and sound, vibration and motion preferences. Ordinary gameplay does not automatically upload these saves to an EPATA game server.</p>
+  <p>The app also stores local advertising/privacy state and, for the implemented store features, installation-verification information, signed access records and pending credit operations. An installation-specific private key is kept through Android's secure key storage. Its public counterpart and signed proofs would be used for online store verification.</p>
+  <p>Local data remains until it is removed or replaced. Clearing the app's storage or uninstalling can remove your progress. The app disables Android cloud backup and supplies exclusions for device-to-device transfer; it has no EPATA cloud-save or game-save recovery service. Device and operating-system behavior can vary, so do not rely on automatic backup to preserve your game.</p>
+
+  <h2>Google advertising and privacy choices</h2>
+  <p>The regular app includes Google Mobile Ads and Google's User Messaging Platform. Google may process your IP address and inferred general location, advertising/app-set identifiers and applicable device-account identifiers, ad/app interactions, and performance diagnostics. These support advertising, measurement and fraud prevention. Test ads do not mean that no information reaches Google. See <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google's SDK data disclosure</a> and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+  <p>The app checks Google's privacy status before initializing and requesting ads. When Google makes a privacy form available, use <strong>Shop &amp; Codes → AD PRIVACY</strong> to open it again. Choices depend on location, device settings and the configured Google messages. Advertising-ID controls are also available in Android settings. Some choices can still permit limited or non-personalized ads and related data processing.</p>
+  <p>Rewarded videos are optional. Skipping a reward offer does not prevent core gameplay. Google's ad and privacy services have their own data-handling and retention practices; clearing a local game save does not delete information already processed by Google.</p>
+
+  <h2>Optional store features — currently inactive</h2>
+  <p>If Google sign-in, purchases, restoration or promotional codes are activated for this game, they would use an online verification service. That implemented flow processes:</p>
+  <ul>
+    <li>A Google identity token to verify sign-in. Depending on the sign-in configuration, this token may include account and profile information such as your email address, name or profile-picture URL. The service derives a pseudonymous account reference and does not persist those profile fields in its account database.</li>
+    <li>The installation's public verification information, signed request proofs, session/access records, and ordinary network information needed to handle requests and limit abuse.</li>
+    <li>Google Play purchase tokens, product and ownership/status information, credit balances and spending records, and promotional-code redemption records.</li>
+  </ul>
+  <p>The purposes are to check ownership, restore verified benefits, maintain the purchased-credit ledger, recover interrupted operations and prevent duplicate grants or code reuse. Google Play would handle payment; this app does not receive your payment-card details. Verification requests require HTTPS, and the service code encrypts stored purchase-token values.</p>
+  <p>These features do not provide cloud storage for your campaign save. This policy does not create a store account, activate an offer, change a price or make an inactive feature available.</p>
+
+  <h2>Deletion and retained store records</h2>
+  <p>You can remove the local game save through Android's app-storage controls. For privacy questions or data-deletion requests, contact <a href="mailto:android-support@epatallc.com">android-support@epatallc.com</a>.</p>
+  <p>If the online store service is activated, its implemented account-deletion operation removes the account, purchased-credit wallet, spend records and stored purchase-token ciphertext. Purchase-fraud and code-redemption records, including pseudonymous account references, token/code hashes and product/status information, would remain to prevent reused payments or codes. The inactive service has no automatic expiry schedule for those retained records. Live hosting, backup handling and operational retention have not yet been finalized.</p>
+  <p>Deleting local or store-account data does not cancel or refund a Google Play purchase. Any active subscription must be managed or canceled through Google Play.</p>
+
+  <h2>Sharing and support</h2>
+  <p>Sharing a score is your choice. The app prepares run information, such as your score, captures, chain and level or mode, and opens Android's sharing chooser. The app or recipient you select handles what you send under its own privacy practices.</p>
+  <p>If you email support, your email service and the receiving service process your address, message and any attachments you choose to send. Support mail is separate from the game save; clearing the app does not delete an email you have sent. Please do not send passwords, payment-card details or identity documents.</p>
+
+  <h2>Permissions and changes</h2>
+  <p>The game's own declared Android permissions are internet access, network-state access and vibration. Google SDKs can add advertising-related permissions to the packaged app. The game does not request access to your contacts, camera, microphone or precise GPS location for play.</p>
+  <p>This policy will need to be reviewed when the app's data flows or online services change. Check the version and update date above when reading it.</p>
+  <footer>Privacy contact: <a href="mailto:android-support@epatallc.com">android-support@epatallc.com</a> · EPATA LLC</footer>
+</main>
+</body>
+</html>
